@@ -1,0 +1,76 @@
+basic:
+    name: connecticut.teach.org
+    environments:
+        production: 'https://connecticut.teach.org'
+        staging: 'https://connecticut.staging-5em2ouy-tsy4np5h7paxs.us-2.platformsh.site'
+        development: 'https://connecticut.develop-sr3snxi-tsy4np5h7paxs.us-2.platformsh.site'
+    basicAuth:
+        production: { user: '', password: '' }
+        staging: { user: '', password: '' }
+        development: { user: '', password: '' }
+    breakpoints:
+        - '320'
+        - 640
+        - 1024
+        - 1200
+    pages:
+        - /
+        - /services/coaching
+        - /guides/teacher-prep-program-application-requirements-connecticut
+        - /programs/deadlines
+        - '/programs?teachTPP=eyJvciI6WzYwMl19'
+        - /troops-to-teachers
+        - /school-employees-and-volunteers-connecticut
+        - /services/application-checklists
+        - '/aid?teachAid=eyJyIjpbNjAyXSwiYXQiOlsiOTMiLCI5NSIsIjk2Il19'
+        - /families
+        - /articles
+        - /events-opportunities
+        - /career-paths-connecticut
+        - /schools-community
+        - /about-teach-connecticut
+        - /checklists/50618
+        - '/programs/eastern-connecticut-state-university?programId=66bdda67-a385-40d6-a24b-6add0079d7b9'
+        - /apoyo-en-espanol
+        - /articles/fast-track-your-career-free-coaching-1
+        - /media
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '01:30 AM'
+        schedule_time_zone: America/Los_Angeles
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: "#lhnHocButton>div.lhnHocChatBtnCont\ndiv#lhnHelpOutCenter\ndiv.e1b25jbg0\ndiv[role='alertdialog']"
+    delay: 5
+    scroll: false
+    headers:
+        - { value: '', header: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content:
+        - { type: title, selector: '' }
+    sensitivity: 0
+    night_mode: false
+    retina_images: false
+    single_ip: false
+    login:
+        type: none
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
+    performance:
+        workers_production: '2'
+        workers_nonproduction: '1'
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: false
