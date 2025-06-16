@@ -4,10 +4,6 @@ basic:
         production: 'https://connecticut.teach.org'
         staging: 'https://connecticut.staging-5em2ouy-tsy4np5h7paxs.us-2.platformsh.site'
         development: 'https://connecticut.develop-sr3snxi-tsy4np5h7paxs.us-2.platformsh.site'
-    basicAuth:
-        production: { user: '', password: '' }
-        staging: { user: '', password: '' }
-        development: { user: '', password: '' }
     breakpoints:
         - '320'
         - 640
@@ -46,13 +42,11 @@ advanced:
     remove: "#lhnHocButton>div.lhnHocChatBtnCont\ndiv#lhnHelpOutCenter\ndiv.e1b25jbg0\ndiv[role='alertdialog']"
     delay: 5
     scroll: false
-    headers:
-        - { value: '', header: '' }
+    headers: {  }
     cookies: ''
     custom_js: ''
     custom_css: ''
-    mock_content:
-        - { type: title, selector: '' }
+    mock_content: {  }
     sensitivity: 0
     night_mode: false
     retina_images: false
